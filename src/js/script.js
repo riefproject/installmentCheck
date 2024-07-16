@@ -50,7 +50,7 @@ function calculateInstallment() {
     let formattedInstallment = installment.toLocaleString('id-ID'); // Format dengan titik sebagai pemisah ribuan
 
     document.getElementById('result').innerHTML = `
-        <div class="card">
+        <div class="card bg-transparent border-white">
             <div class="card-body">
                 <h5 class="card-title">Hasil Perhitungan</h5>
                 <p class="card-text">Cicilan Bulanan: IDR ${formattedInstallment}</p>

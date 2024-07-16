@@ -3,6 +3,7 @@ body {
     background-image: 
         radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
         radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+    height: 100vh;
     
 }
 .container {
@@ -18,4 +19,12 @@ body {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     padding: 2em;
+}
+.btn-ijo{
+    background: #38943e;
+    color:white;
+    
+}
+.btn-ijo:hover{
+    background: #1f4f22;
 }
