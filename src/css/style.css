@@ -28,6 +28,6 @@ body {
 .btn-ijo:hover{
     background: #1f4f22;
 }
-input{
+.form-control{
     background-color:#616366;
 }
