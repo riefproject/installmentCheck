@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Cicilan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container text-white">
+        <div class="cge">
+            <h1 class="text-center">Simulasi Cicilan</h1>
+            <form id="loanForm">
+                <div class="form-group">
+                    <label for="price">Harga Barang (IDR):</label>
+                    <input type="text" class="form-control" id="price" required>
+                </div>
+                <div class="form-group">
+                    <label for="dp">DP (IDR):</label>
+                    <input type="text" class="form-control" id="dp" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest">Bunga:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="interestType" id="annualInterest" value="annual" checked>
+                        <label class="form-check-label" for="annualInterest">
+                            Per Tahun (%)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="interestType" id="monthlyInterest" value="monthly">
+                        <label class="form-check-label" for="monthlyInterest">
+                            Per Bulan (%)
+                        </label>
+                    </div>
+                    <input type="text" class="form-control" id="interest" required>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Durasi (bulan):</label>
+                    <input type="number" class="form-control" id="duration" required>
+                </div>
+                <button type="button" class="btn btn-primary btn-block" onclick="calculateInstallment()">Hitung Cicilan</button>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="src/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
